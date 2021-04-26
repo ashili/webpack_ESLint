@@ -51,7 +51,7 @@ function generateTable(table, data) {
     const row = table.insertRow();
     console.log(element);
     let key;
-    // eslint-disable-next-line no-restricted-syntax
+    // eslint-disable-next-line guard-for-in,no-restricted-syntax
     for (key in element) {
       const cell = row.insertCell();
       // eslint-disable-next-line no-undef
