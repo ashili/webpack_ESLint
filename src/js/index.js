@@ -32,6 +32,7 @@ ConsoleLogIt('this workedss  in the bundle');
 function generateTableHead(table, data) {
   const thead = table.createTHead();
   const row = thead.insertRow();
+  // eslint-disable-next-line no-restricted-syntax
   for (const key of data) {
     const th = document.createElement('th');
     const text = document.createTextNode(key);
@@ -41,10 +42,12 @@ function generateTableHead(table, data) {
 }
 
 function generateTable(table, data) {
+  // eslint-disable-next-line no-restricted-syntax
   for (const element of data) {
     const row = table.insertRow();
     console.log(element);
     let key;
+    // eslint-disable-next-line no-restricted-syntax
     for (key in element) {
       const cell = row.insertCell();
       const text = document.createTextNode(element[key]);
