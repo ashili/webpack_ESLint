@@ -1,5 +1,5 @@
 import TestJS from './TestJs';
-import ConsoleLogIt from './ConsoleLogIt';
+import ConsoleLogIt from './ConsoleLogIt.js';
 import getJSON from './getJSON';
 
 TestJS();
