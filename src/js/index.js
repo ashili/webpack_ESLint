@@ -1,4 +1,5 @@
 import TestJS from './TestJs';
+/* eslint import/no-unresolved: 2 */
 import ConsoleLogIt from './ConsoleLogIt.js';
 import getJSON from './getJSON';
 
@@ -15,8 +16,9 @@ getJSON('http://localhost:8000/api/v1/cities',
       const table = document.querySelector('table');
       const data = Object.keys((records.data[0]));
       const dataRecords = records.data;
-
+      // eslint-disable-next-line no-use-before-define
       generateTableHead(table, data);
+      // eslint-disable-next-line no-use-before-define
       generateTable(table, dataRecords);
       /*
                   let data = Object.keys(records.data[0]);
