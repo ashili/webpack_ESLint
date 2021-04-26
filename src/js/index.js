@@ -11,8 +11,10 @@ getJSON('', (data) => {
 getJSON('http://localhost:8000/api/v1/cities',
   (err, records) => {
     if (err !== null) {
+      // eslint-disable-next-line no-undef
       alert(`Something went wrong: ${err}`);
     } else {
+      // eslint-disable-next-line no-undef
       const table = document.querySelector('table');
       const data = Object.keys((records.data[0]));
       const dataRecords = records.data;
@@ -34,7 +36,9 @@ function generateTableHead(table, data) {
   const row = thead.insertRow();
   // eslint-disable-next-line no-restricted-syntax
   for (const key of data) {
+    // eslint-disable-next-line no-undef
     const th = document.createElement('th');
+    // eslint-disable-next-line no-undef
     const text = document.createTextNode(key);
     th.appendChild(text);
     row.appendChild(th);
@@ -50,6 +54,7 @@ function generateTable(table, data) {
     // eslint-disable-next-line no-restricted-syntax
     for (key in element) {
       const cell = row.insertCell();
+      // eslint-disable-next-line no-undef
       const text = document.createTextNode(element[key]);
       cell.appendChild(text);
     }
