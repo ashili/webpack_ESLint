@@ -1,5 +1,6 @@
 export default function getJSON(url, callback) {
-  const xhr = new XMLHttpRequest();
+  let xhr;
+  xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.responseType = 'json';
   xhr.onload = function () {
