@@ -1,6 +1,5 @@
 import TestJS from './TestJs';
-/* eslint import/no-unresolved: 2 */
-import ConsoleLogIt from './ConsoleLogIt.js';
+import ConsoleLogIt from './Console.logIt';
 import getJSON from './getJSON';
 
 TestJS();
@@ -29,7 +28,7 @@ getJSON('http://localhost:8000/api/v1/cities',
                    */
     }
   });
-ConsoleLogIt('this workedss  in the bundle');
+ConsoleLogIt('this worked  in the bundle');
 
 function generateTableHead(table, data) {
   const thead = table.createTHead();
